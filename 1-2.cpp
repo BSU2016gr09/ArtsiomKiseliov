@@ -36,10 +36,9 @@ int main()
 {
 	setlocale(0, "");
 	float a;
-	cout << "Ââåäèòå ÷èñëî";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®";
 	cin >> a;
 	isNatural(a);
 	max(a);
 	system("pause");
-	return 0;
 }
