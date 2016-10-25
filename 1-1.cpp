@@ -15,15 +15,16 @@ int sum = 0;
 			m /= 10;
 		}
 		return sum;
+	
 }
 int main()
 {
 	setlocale(0, "");
 	float k;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®: ";
 	cin >> k;
 	isNatural(k);
-	cout << "Ñóììà öèôğ ÷èñëà ğàâíà " << summa(k) << endl;
+	cout << "Ã‘Ã³Ã¬Ã¬Ã  Ã¶Ã¨Ã´Ã° Ã·Ã¨Ã±Ã«Ã  Ã°Ã Ã¢Ã­Ã  " << summa(k) << endl;
 	system("pause");
 	return 0;
 }
