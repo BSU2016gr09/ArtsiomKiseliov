@@ -47,6 +47,48 @@ void rightmass(int a[], int N )
 		count++;
 	}
 }
+void lefttmass(int a[], int N)
+{
+
+	int i = 0;
+	int memory;
+	cout << "Исходный массив:" << endl;
+
+	while (i < N)
+	{
+		a[i] = i + 1;
+		cout << " " << a[i];
+		i++;
+	}
+
+	cout << "\n" << endl;
+	int count = 0;
+
+	while (count <= N)
+	{
+
+		memory = a[0];
+
+		i = 0;
+		while (i < (N - 1))
+		{
+			a[i] = a[i + 1];
+			i++;
+		}
+		a[N-1] = memory;
+
+		cout << "Сдвиг " << count;
+		cout << "\n" << endl;
+		i = 0;
+		while (i > N)
+		{
+			cout << " " << a[i];
+			i++;
+		}
+		cout << "\n" << endl;
+		count++;
+	}
+}
 using namespace std;
 int main()
 {
@@ -57,6 +99,7 @@ int main()
 	int i = 0;
 	int memory;
 	rightmass(a, N);
+	leftmass(a,N);
 	system("pause");
 	return 0;
 }
