@@ -21,12 +21,6 @@ while (i<N)
 void invertmas(int a[], int N)
 {
 	int i = 0;
-	while (i<N)
-	{
-		a[i] = rand() % 20;
-		cout << " " << a[i];
-		i++;
-	}
 cout << "\nПеревернутый массив:" << endl;
 i = N - 1;
      while (i >= 0)
