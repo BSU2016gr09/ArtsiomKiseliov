@@ -1,7 +1,5 @@
 #include <ctime>
 #include<iostream>
-#include <stdlib.h>
-#include <iomanip>
 #include<clocale>
 using namespace std;
 // Массив целых чисел размера N проинициализировать случайными числами из промежутка от 1 до N. "Перевернуть" массив (последний элемент станет первым, 1-й станет последним, 2-й поменяется с предпоследним и т.д.) 
@@ -13,7 +11,7 @@ srand(time(0));
 cout << "Исходный массив:" << endl;
 while (i<N)
 {
-	a[i] = rand() % 20;
+	a[i] = rand() % N + 1;
 	cout << " " << a[i];
 	i++;
 }
