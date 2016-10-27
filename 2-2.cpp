@@ -6,27 +6,20 @@
 using namespace std;
 void rightmass(int a[], int N )
 {
-
 	int i = 0;
 	int memory;
-	cout << "Èñõîäíûé ìàññèâ:" << endl;
-
+	cout << "ÃˆÃ±ÃµÃ®Ã¤Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢:" << endl;
 	while (i<N)
 	{
 		a[i] = i + 1;
 		cout << " " << a[i];
 		i++;
 	}
-
-
 	cout << "\n" << endl;
 	int count = 1;
-
 	while (count <= N)
 	{
-
 		memory = a[N - 1];
-
 		i = N - 1;
 		while (i>0)
 		{
@@ -34,8 +27,7 @@ void rightmass(int a[], int N )
 			i--;
 		}
 		a[0] = memory;
-
-		cout << "Ñäâèã " << count;
+		cout << "Ã‘Ã¤Ã¢Ã¨Ã£ " << count;
 		cout << "\n" << endl;
 		i = 0;
 		while (i<N)
