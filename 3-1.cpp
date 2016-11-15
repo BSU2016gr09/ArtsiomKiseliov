@@ -3,7 +3,7 @@
 #include<cmath>
 #include<time.h>
 using namespace std;
-void drawCost1(int a)
+void drawCost1(int a)//жесть!!!!!!!!!!!!!!! А чем эта ф-ция отличается от drawCost2 ????????????? ЧЕМ, КАРЛ??????????
 {
 	switch (a)
 	{
@@ -27,7 +27,7 @@ void drawCost2(int b)
 	case 6: cout << "+-----+\n" << "|O   O|\n" << "|O   O|\n" << "|O   O|\n" << "+-----+\n" << endl; break;
 	}
 }
-void cube1(int &a)
+void cube1(int &a)//жесть!!!!!!!!!!!!!!! А чем эта ф-ция отличается от cube2 ????????????? ЧЕМ, КАРЛ??????????
 {
 	a = rand() % 6 + 1;
 	drawCost1(a);
@@ -42,7 +42,7 @@ void qGame(int s, int f)
 	int a = 0,b = 0, i;
 	while (s <= 50 && f <= 50)
 	{
-		if (i=0,i < 2)
+		if (i=0,i < 2)//вообще не понял что это и зачем.... Подойди - расскажи!!!!
 		{
 			cube1(a);
 			cube2(b);
