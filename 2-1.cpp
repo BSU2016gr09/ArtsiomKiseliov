@@ -16,7 +16,7 @@ while (i<N)
 	i++;
 }
 }
-void invertmas(int a[], int N)
+void invertmas(int a[], int N)//Вы его не "переворачиваете", а просто выводите в другом порядке. Массив то не меняется!!!
 {
 	int i = 0;
 cout << "\nПеревернутый массив:" << endl;
