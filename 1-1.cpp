@@ -1,3 +1,4 @@
+//Расположить в порядке возрастания элементы массива А(N), начиная с k-го элемента.
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -9,7 +10,7 @@ int main()
 	setlocale(0,"");
 	double* Arr;
 	int n;
-	cout << "������� ������: ";
+	cout << "Ââåäèòå ðàçìåð: ";
 	cin >> n;
 	Arr = new double[n];
 	insert(Arr, n);
@@ -33,7 +34,7 @@ void print(double* Arr, int n)
 void sort(double* Arr, int n)
 {
 	int k;
-	cout << "������� k:";
+	cout << "Ââåäèòå k:";
 	cin >> k;
 	for (; k<n; k++)
 	{
