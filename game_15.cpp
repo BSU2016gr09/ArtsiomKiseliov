@@ -1,8 +1,8 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <iomanip>
 #include <cstdlib>
 #include <clocale>
-// Игра в пятнадцать.
+// РРіСЂР° РІ РїСЏС‚РЅР°РґС†Р°С‚СЊ.
 using namespace std;
 const int SIZE = 4;
 int board[SIZE][SIZE];
@@ -26,10 +26,10 @@ void mainMenu()
 {
 	setlocale(0, "");
 	system("cls");
-	cout << "\t Игра в пятнадцать"<< endl;
+	cout << "\t РРіСЂР° РІ РїСЏС‚РЅР°РґС†Р°С‚СЊ"<< endl;
 
-	cout << "\tНажмите 1 чтобы начать игру\n"
-		<< "\tНажмите 2 чтобы выйти\n";
+	cout << "\tРќР°Р¶РјРёС‚Рµ 1 С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ РёРіСЂСѓ\n"
+		<< "\tРќР°Р¶РјРёС‚Рµ 2 С‡С‚РѕР±С‹ РІС‹Р№С‚Рё\n";
 	bool y = 0;
 	int choice;
 	while (!y)
@@ -38,7 +38,7 @@ void mainMenu()
 		cin >> choice;
 
 		if (choice < 1 || choice > 2)
-			cout << "Неверное значение. Повторите попытку." << endl;
+			cout << "РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ." << endl;
 		else
 			y = 1;
 	}
@@ -68,7 +68,7 @@ void Game()
 		changeBoard();
 		turns++;
 	}
-	cout << "Вы выиграли "<< turns << " вернуться." << endl;
+	cout << "Р’С‹ РІС‹РёРіСЂР°Р»Рё "<< turns << " РІРµСЂРЅСѓС‚СЊСЃСЏ." << endl;
 	system("pause");
 }
 
@@ -114,7 +114,7 @@ bool checkBoard()
 void showBoard()
 {
 	system("cls");
-	cout << "Игра Пятнадцать" << endl;
+	cout << "РРіСЂР° РџСЏС‚РЅР°РґС†Р°С‚СЊ" << endl;
 
 	for (int i = 0; i < SIZE; i++)
 	{
@@ -173,7 +173,7 @@ void changeBoard()
 			}
 		}
 		if (!y)
-			cout << "Неверное значение. Повторите попытку." << endl;
+			cout << "РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ." << endl;
 	}
 }
 
