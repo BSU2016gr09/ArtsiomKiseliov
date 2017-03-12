@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <clocale>
 using namespace std;
-//В строке удалить слова, заключённые в круглые скобки
+//19(*).В строке удалить слова, заключённые в круглые скобки
 char* delstr(char* s, char k, char j) 
 {
 	int   q;
