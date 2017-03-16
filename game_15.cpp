@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <iomanip>
 #include <cstdlib>
 #include <clocale>
@@ -32,7 +32,7 @@ void mainMenu()
 		<< "\tНажмите 2 чтобы выйти\n";
 	bool y = 0;
 	int choice;
-	while (!y)
+	while (!y) //Лишнее! Можно было в switch добавить default
 	{
 		cout << ">";
 		cin >> choice;
@@ -85,7 +85,7 @@ bool check()
 	int index = 0;
 	for (int i = 0; i < SIZE; i++)
 		for (int j = 0; j < SIZE; j++, index++)
-			solution[index] = board[i][j];
+			solution[index] = board[i][j]; // А зачем каждый раз генерировать?????
 	int inv = 0;
 	for (int i = 0; i < SIZE*SIZE; i++)
 		if (solution[i])
@@ -192,7 +192,7 @@ void fillBoard()
 				if (!already[randNum])
 				{
 					already[randNum] = 1;
-					board[i][j] = randNum + 1;
+					board[i][j] = randNum + 1;//так не прокатит!!! Можно сгенерировать такую ситуацию, из которой НЕЛЬЗЯ выиграть
 					break;
 				}
 			}
