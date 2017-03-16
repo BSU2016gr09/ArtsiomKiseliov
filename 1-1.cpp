@@ -13,8 +13,8 @@ int main()
 	cout << "Ââåäèòå ðàçìåð: ";
 	cin >> n;
 	Arr = new double[n];
-	insert(Arr, n);
-	sort(Arr, Arr+n);
+	insert(Arr, n);//Ну что это за имя для функции????
+	sort(Arr, Arr+n);//ОППА, разберить ка самостоятельно что за тип выражения  Arr+n!!!!!!
 	print(Arr, n);
 	delete[] Arr;
 	Arr = nullptr;
@@ -42,7 +42,7 @@ void sort(double* Arr, int n)
 		{
 			if (Arr[k] > Arr[j])
 			{
-				swap(Arr[k], Arr[j]);
+				swap(Arr[k], Arr[j]); //какая колхозная сортировка
 		
 			}
 		}
