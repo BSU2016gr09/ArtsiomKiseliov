@@ -1,7 +1,7 @@
 #include <iostream>
 #include <clocale>
 using namespace std;
-
+// Сделать сумму дробей, произведение дробей.
 struct Fraction {
        int a;
 	   int b;
