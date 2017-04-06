@@ -2,14 +2,14 @@
 #include <clocale>
 using namespace std;
 // Сделать сумму дробей, произведение дробей.
-struct Fraction {
+struct Fraction {//не нравится мне, что не указано в явном виде секция public!!!
        int a;
 	   int b;
-	   Fraction(int a, int b) {
+	   Fraction(int a, int b) {//сделай еще обязательно конструктор без параметров. А то тебе пришлось 10 раз писать Fraction temp(0, 0);
 		(*this).a = a;
 		(*this).b = b;
 	   };
-	   void NOD() {
+	   void NOD() {//слабо понимаю идею доступности этой функции извне класса. Это вспомогательная ф-ция...
 		int a_1 = a;
 		int b_1 = b;
 		int buf;
@@ -29,11 +29,11 @@ struct Fraction {
 };
 
 struct addMultFraction {
-	struct Fraction drob1; 
+	struct Fraction drob1; //в С++ писать тут struct не обязательно
 	struct Fraction drob2; 
-	addMultFraction(int a, int b, int a1, int b1) : drob1(a, b), drob2(a1, b1) {} 
-	friend Fraction operator+(Fraction drob1, Fraction drob2);
-	friend Fraction operator*(Fraction drob1, Fraction drob2);
+	addMultFraction(int a, int b, int a1, int b1) : drob1(a, b), drob2(a1, b1) {} //ты разобрался с инициализацией? Или просто скопировал откуда-то????
+	friend Fraction operator+(Fraction drob1, Fraction drob2);//не нравится мне, что ты передаешь не по ссылке!!!
+	friend Fraction operator*(Fraction drob1, Fraction drob2);//не нравится мне, что ты передаешь не по ссылке!!!
 	void show() {
 		cout << "Первая дробь: " << drob1.a << "/" << drob1.b << endl;
 		cout << "Вторая дробь: " << drob2.a << "/" << drob2.b << endl;
