@@ -4,12 +4,12 @@ using namespace std;
 //Сделать сумму и произведение дробей.
 struct Fraction {
 public:
-	int a;
-	int b;
-	Fraction(): a (0), b(0) {};
-	Fraction(int a, int b) {
-		(*this).a = a;
-		(*this).b = b;
+	int a;//я же говорил: Плохо, что это public
+	int b;//я же говорил: Плохо, что это public
+	Fraction(): a (0), b(0) {};//Плохо совсем, что знаменатель у вас равен НУЛЮ!!!! Вы не учились в 3-м классе????
+	Fraction(int a, int b) {//тут тоже стоит использовать список инициализации!!!
+		(*this).a = a;//тут надо проверки на знак 
+		(*this).b = b;//тут надо проверки на знак и на равенство нулю
 		cout << "Работает конструктор\n";
 	};
 	void NOD() {
@@ -34,7 +34,7 @@ public:
 	};
 };
 
-struct addMultFraction {
+struct addMultFraction {//тут вообще не понимаю что это и зачем. На паре мне расскажете свою идею
 	Fraction drob1;
 	Fraction drob2;
 	addMultFraction(int a, int b, int a1, int b1) : drob1(a, b), drob2(a1, b1) {}
